@@ -1,5 +1,5 @@
 <template>
-	<div class="">
+	<div class="bg-darker flex-1">
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ullam odit rerum
 		explicabo quibusdam repudiandae dolor! Voluptatum, nesciunt architecto. Hic culpa quod
 		excepturi porro officiis quidem a, dolor, nisi dignissimos omnis repellat dolorem?

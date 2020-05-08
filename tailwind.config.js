@@ -6,8 +6,10 @@ module.exports = {
 				jost: ['Jost'],
 			},
 			colors: {
+				light: '#8E8E8C',
 				dark: '#5d5d5b',
-				darkest: '#282825',
+				darker: '#282825',
+				darkest: '#262524',
 			},
 		},
 	},
