@@ -1,16 +1,19 @@
 <template>
-	<div class="font-jost min-h-screen tracking-wider leading-normal" id="app">
-		<HelloWorld />
+	<div class="font-jost min-h-screen tracking-wider leading-normal flex" id="app">
+		<Sidebar />
+		<Content />
 	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import Sidebar from './components/Sidebar.vue';
+import Content from './components/Content.vue';
 
 export default {
 	name: 'App',
 	components: {
-		HelloWorld,
+		Sidebar,
+		Content,
 	},
 };
 </script>
