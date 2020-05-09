@@ -43,7 +43,7 @@
 				<div>Discover</div>
 			</a>
 			<!-- Create option -->
-			<a class="flex items-center px-4 py-2 text-white  mb-2 hover:bg-light" href="#">
+			<a class="flex items-center px-4 py-2 text-white mb-2 hover:bg-light" href="#">
 				<svg
 					fill="currentColor"
 					class="mr-3"
@@ -58,7 +58,7 @@
 				<div>Create</div>
 			</a>
 			<!-- Work option -->
-			<a class="flex items-center px-4 py-2 text-white  mb-2 hover:bg-light" href="#">
+			<a class="flex items-center px-4 py-2 text-white mb-2 hover:bg-light" href="#">
 				<svg
 					fill="currentColor"
 					class="mr-3"
@@ -73,7 +73,7 @@
 				<div>Work</div>
 			</a>
 			<!-- Play option -->
-			<a class="flex items-center px-4 py-2 text-white  mb-2 hover:bg-light" href="#">
+			<a class="flex items-center px-4 py-2 text-white mb-2 hover:bg-light" href="#">
 				<svg
 					fill="currentColor"
 					class="mr-3"
@@ -89,7 +89,7 @@
 				<div>Play</div>
 			</a>
 			<!-- Develop option -->
-			<a class="flex items-center px-4 py-2 text-white  mb-2 hover:bg-light" href="#">
+			<a class="flex items-center px-4 py-2 text-white mb-2 hover:bg-light" href="#">
 				<svg
 					fill="currentColor"
 					class="mr-3"
@@ -104,7 +104,7 @@
 				<div>Develop</div>
 			</a>
 			<!-- Categories option -->
-			<a class="flex items-center px-4 py-2 text-white  mb-2 hover:bg-light" href="#">
+			<a class="flex items-center px-4 py-2 text-white mb-2 hover:bg-light" href="#">
 				<svg
 					fill="currentColor"
 					class="mr-3"
@@ -119,7 +119,7 @@
 				<div>Categories</div>
 			</a>
 			<!-- Updates option -->
-			<a class="flex items-center px-4 py-2 text-white  hover:bg-light" href="#">
+			<a class="flex items-center px-4 py-2 text-white hover:bg-light" href="#">
 				<svg
 					fill="currentColor"
 					class="mr-3"
@@ -133,6 +133,17 @@
 				</svg>
 				<div>Updates</div>
 			</a>
+		</div>
+
+		<!-- User -->
+		<div class="flex px-4 cursor-pointer mt-32 items-center hover:bg-light py-2">
+			<svg class="mr-3" width="34px" height="34px" viewBox="0 0 34 34">
+				<circle fill="#D8D8D8" fill-rule="nonzero" cx="17" cy="17" r="17"></circle>
+				<text font-size="15" font-weight="300" fill="#2D2F31">
+					<tspan x="4.85714286" y="21.7857143">AM</tspan>
+				</text>
+			</svg>
+			<div class="text-white">Andre Madarang</div>
 		</div>
 	</div>
 </template>
