@@ -11,29 +11,44 @@
 			</p>
 		</div>
 
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ullam odit rerum
-		explicabo quibusdam repudiandae dolor! Voluptatum, nesciunt architecto. Hic culpa quod
-		excepturi porro officiis quidem a, dolor, nisi dignissimos omnis repellat dolorem?
-		Consectetur, nisi. Perferendis adipisci voluptatem quibusdam eius aspernatur
-		reiciendis, minima iusto pariatur, soluta natus consequuntur atque error dolor
-		voluptas velit rerum vero a voluptate sunt modi. Pariatur quo consequuntur, inventore
-		quae magni, atque minus exercitationem ex vitae laboriosam ut quibusdam omnis nobis
-		nostrum quas hic ipsum nam quis porro. Totam laborum, quaerat odio neque tempora velit
-		repellendus vero! Repellat aspernatur eius amet deserunt fugit vero ducimus quibusdam,
-		numquam magnam qui aperiam expedita reprehenderit vitae delectus architecto ab at?
-		Eligendi, sapiente. Ratione atque dolore, error dignissimos eligendi sed iure illum
-		obcaecati quaerat quos ab dolorum aliquid labore sunt perferendis quam ut. Temporibus,
-		perspiciatis ipsam quos ab similique illum, placeat, facere vel molestias sint quis
-		fugiat cum amet? Cumque quae, recusandae laboriosam ab distinctio, impedit odio
-		eveniet assumenda explicabo amet et dolorem veniam iusto ut autem voluptatum enim
-		doloremque? Iure impedit quod, ea necessitatibus inventore porro optio delectus at
-		repudiandae possimus quas illum ullam quis facilis, est sit dolores. Enim magni rerum
-		molestiae ab aliquam incidunt fugiat ea cupiditate.
+		<!-- {
+					
+				}, -->
+
+		<!-- Cards -->
+		<div class="flex mb-10">
+			<Card class="mr-2" :array="array[0]" />
+			<Card class="ml-2" :array="array[1]" />
+		</div>
 	</div>
 </template>
 
 <script>
-export default {};
+import Card from './Card';
+
+export default {
+	data() {
+		return {
+			array: [
+				{
+					title: 'Edit Photos Fast with Extensions',
+					subtitle: 'Get Started',
+					content: 'Tweak photos using multiple apps, without switching windows.',
+					url: 'discover2.jpg',
+				},
+				{
+					title: '3 Notable Note-Tacking Apps',
+					subtitle: 'The basics',
+					content: 'Plain text enthusiast? Markdown master? Find your new favourite.',
+					url: 'discover3.jpg',
+				},
+			],
+		};
+	},
+	components: {
+		Card,
+	},
+};
 </script>
 
 <style src="../assets/css/tailwind.css"></style>
