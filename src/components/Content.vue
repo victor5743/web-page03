@@ -23,10 +23,10 @@
 		<div class="border-b border-gray-500 mb-8 mx-2"></div>
 
 		<!-- New Apps and Games Section -->
-		<!-- Title -->
+		<!-- Title - New Apps and Games Section -->
 		<div class="flex justify-between mx-2 mb-4">
 			<h1 class="font-normal text-lg">New Apps and Games We Love</h1>
-			<a class="text-blue-600" href="#">See all</a>
+			<a class="text-blue-700 hover:text-blue-500" href="#">See all</a>
 		</div>
 
 		<!-- AppsGames component -->
@@ -35,12 +35,27 @@
 				<AppsGames :data="data[index]" />
 			</div>
 		</div>
+
+		<!-- Top Paid Section -->
+		<!-- Title - New Apps and Games Section -->
+		<div class="flex justify-between mx-2 mb-4">
+			<h1 class="font-normal text-lg">Top Paid</h1>
+			<a class="text-blue-700 hover:text-blue-500" href="#">See all</a>
+		</div>
+
+		<!-- TopPaid component -->
+		<div class="flex flex-wrap w-full mb-4">
+			<div class="w-1/2" v-for="(item, index) in property" :key="item.id">
+				<TopPaid :property="property[index]" />
+			</div>
+		</div>
 	</div>
 </template>
 
 <script>
 import Card from './Card';
 import AppsGames from './AppsGames';
+import TopPaid from './TopPaid';
 
 export default {
 	data() {
@@ -85,11 +100,50 @@ export default {
 					msg: 'Buy',
 				},
 			],
+			property: [
+				{
+					title: '1. Final Cut Pro',
+					subtitle: 'Professional post-production',
+					img: 'icon_fcp.png',
+					price: '40.00$',
+				},
+				{
+					title: '2. Magnet',
+					subtitle: 'Organize Your Workspace',
+					img: 'icon_magnet.png',
+					price: '40.00$',
+				},
+				{
+					title: '3. DaisyDisk',
+					subtitle: 'Recover disk space',
+					img: 'icon_daisydisk.png',
+					price: '40.00$',
+				},
+				{
+					title: '4. The Sims 2: Super Collection',
+					subtitle: 'Your faves in one place',
+					img: 'icon_sims.png',
+					price: '40.00$',
+				},
+				{
+					title: '5. Word Document Writer Pro',
+					subtitle: 'Business',
+					img: 'icon_word.png',
+					price: '40.00$',
+				},
+				{
+					title: '6. Antivirus Zap - Virus & Adware',
+					subtitle: 'Scan & Remove Malware & Adware',
+					img: 'icon_antivirusapp.png',
+					price: '40.00$',
+				},
+			],
 		};
 	},
 	components: {
 		Card,
 		AppsGames,
+		TopPaid,
 	},
 };
 </script>
