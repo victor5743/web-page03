@@ -11,14 +11,11 @@
 			</p>
 		</div>
 
-		<!-- {
-					
-				}, -->
-
 		<!-- Cards -->
-		<div class="flex mb-10">
-			<Card class="mr-2" :array="array[0]" />
-			<Card class="ml-2" :array="array[1]" />
+		<div class="flex">
+			<div class="w-1/2" v-for="(item, index) in array" :key="item.id">
+				<Card :array="array[index]" />
+			</div>
 		</div>
 	</div>
 </template>
