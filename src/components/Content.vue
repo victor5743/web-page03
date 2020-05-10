@@ -1,5 +1,16 @@
 <template>
-	<div class="bg-darker flex-1">
+	<div class="bg-darker w-3/4 text-white px-10">
+		<!-- Image and text -->
+		<div
+			class="discover-banner text-white px-8 rounded-b-lg py-12 bg-no-repeat bg-cover mb-6"
+		>
+			<span class="uppercase mb-4">The Basics</span>
+			<h1 class="font-normal mb-4">Create Personal Projects</h1>
+			<p class="w-64 leading-normal text-gray-400">
+				With these apps, creativity has no boundaries.
+			</p>
+		</div>
+
 		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ullam odit rerum
 		explicabo quibusdam repudiandae dolor! Voluptatum, nesciunt architecto. Hic culpa quod
 		excepturi porro officiis quidem a, dolor, nisi dignissimos omnis repellat dolorem?
@@ -24,3 +35,5 @@
 <script>
 export default {};
 </script>
+
+<style src="../assets/css/tailwind.css"></style>
