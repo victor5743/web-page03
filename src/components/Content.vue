@@ -1,15 +1,7 @@
 <template>
 	<div class="bg-darker w-3/4 text-white px-10">
-		<!-- Image and text -->
-		<div
-			class="discover-banner text-white px-8 rounded-b-lg py-12 bg-no-repeat bg-cover mb-6"
-		>
-			<span class="uppercase mb-4">The Basics</span>
-			<h1 class="font-normal mb-4">Create Personal Projects</h1>
-			<p class="w-64 leading-normal text-gray-400">
-				With these apps, creativity has no boundaries.
-			</p>
-		</div>
+		<!-- Carousel -->
+		<Carousel />
 
 		<!-- Cards Section -->
 		<div class="flex flex-wrap w-full mb-6">
@@ -56,6 +48,7 @@
 import Card from './Card';
 import AppsGames from './AppsGames';
 import TopPaid from './TopPaid';
+import Carousel from './Carousel';
 
 export default {
 	data() {
@@ -144,6 +137,7 @@ export default {
 		Card,
 		AppsGames,
 		TopPaid,
+		Carousel,
 	},
 };
 </script>
